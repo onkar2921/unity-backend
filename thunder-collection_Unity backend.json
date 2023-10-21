@@ -1,0 +1,351 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Unity backend",
+    "dateExported": "2023-10-21T21:58:59.847Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "3fab14bf-58de-479a-9556-380ba84a43ec",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2023-10-21T20:43:21.149Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "29837a4d-63c5-4b75-9b1b-f0f49e29c763",
+            "name": "products",
+            "containerId": "",
+            "created": "2023-10-21T20:54:20.178Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "8e122e9f-70a0-49d1-a0ca-ce15e05cea8f",
+            "name": "catlogs",
+            "containerId": "",
+            "created": "2023-10-21T21:23:25.108Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "a0b0ac31-e896-4186-9b6a-7ed137a5e9cf",
+            "name": "orders",
+            "containerId": "",
+            "created": "2023-10-21T21:38:44.008Z",
+            "sortNum": 60000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "e37fe078-11f2-4d81-8fee-bb78469160be",
+            "colId": "7bdf6ba2-0e91-4aea-8b45-18eac85d6f0e",
+            "containerId": "3fab14bf-58de-479a-9556-380ba84a43ec",
+            "name": "Register",
+            "url": "http://localhost:8000/api/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-10-21T20:43:30.637Z",
+            "modified": "2023-10-21T20:45:01.573Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"test1\",\n  \"email\":\"test1@gmail.com\",\n  \"password\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bb0be9d2-b092-44cf-ba2e-1b2e6adf2bb3",
+            "colId": "7bdf6ba2-0e91-4aea-8b45-18eac85d6f0e",
+            "containerId": "3fab14bf-58de-479a-9556-380ba84a43ec",
+            "name": "seller 1",
+            "url": "http://localhost:8000/api/auth/register",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2023-10-21T20:45:28.365Z",
+            "modified": "2023-10-21T20:46:39.960Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"seller2\",\n  \"email\":\"seller2@gmail.com\",\n  \"password\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "785ca767-3e0d-42c6-8825-2c093c984b74",
+            "colId": "7bdf6ba2-0e91-4aea-8b45-18eac85d6f0e",
+            "containerId": "3fab14bf-58de-479a-9556-380ba84a43ec",
+            "name": "seller 1 login",
+            "url": "http://localhost:8000/api/auth/login",
+            "method": "POST",
+            "sortNum": 17500,
+            "created": "2023-10-21T20:52:44.562Z",
+            "modified": "2023-10-21T21:33:17.513Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \n  \"email\":\"seller2@gmail.com\",\n  \"password\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d44512af-f8d1-46f8-8946-6c13bf353d92",
+            "colId": "7bdf6ba2-0e91-4aea-8b45-18eac85d6f0e",
+            "containerId": "3fab14bf-58de-479a-9556-380ba84a43ec",
+            "name": "login",
+            "url": "http://localhost:8000/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-10-21T20:45:13.292Z",
+            "modified": "2023-10-21T20:47:23.157Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \"email\":\"test1@gmail.com\",\n  \"password\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8d8f6ced-0d13-48f2-92f6-4f6fc6e77fae",
+            "colId": "7bdf6ba2-0e91-4aea-8b45-18eac85d6f0e",
+            "containerId": "29837a4d-63c5-4b75-9b1b-f0f49e29c763",
+            "name": "create product",
+            "url": "http://localhost:8000/api/createProduct",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-10-21T20:54:32.180Z",
+            "modified": "2023-10-21T21:12:21.508Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "UserID",
+                    "value": "653438879c975998e13fd0e6"
+                },
+                {
+                    "name": "authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM0Mzg4NzljOTc1OTk4ZTEzZmQwZTYiLCJuYW1lIjoic2VsbGVyMSIsImVtYWlsIjoic2VsbGVyMUBnbWFpbC5jb20iLCJpYXQiOjE2OTc5MjE2MDV9.dDs3gtoLCmg46PG4YQjwL6wtLXoXQyz-JHTWtrL4P3U"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"apple\",\n  \"price\":900000\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ff25156a-adf0-4a3d-9c3a-2c9302bd9437",
+            "colId": "7bdf6ba2-0e91-4aea-8b45-18eac85d6f0e",
+            "containerId": "8e122e9f-70a0-49d1-a0ca-ce15e05cea8f",
+            "name": "create catlog",
+            "url": "http://localhost:8000/api/seller/create-catalog",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-10-21T21:23:34.362Z",
+            "modified": "2023-10-21T21:33:40.281Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM0Mzg0ZDljOTc1OTk4ZTEzZmQwZTQiLCJuYW1lIjoidGVzdDEiLCJlbWFpbCI6InRlc3QxQGdtYWlsLmNvbSIsImlhdCI6MTY5NzkyMTU0OH0.yynveM07BIp5q5Sdgh44ZkaMejvGt5jFUtlU9RMVofM"
+                },
+                {
+                    "name": "UserID",
+                    "value": "6534384d9c975998e13fd0e4"
+                }
+            ],
+            "params": [
+                {
+                    "name": "UserID",
+                    "value": "6534384d9c975998e13fd0e4",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"products\":[\n    \"65343d98a3a07aed4bc83018\",\n  \n    \"65343e88b77e4d80c1c6598d\"\n    ],\n    \"sellerId\":\"653438af9c975998e13fd0e8\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "91a7abee-0f68-4a60-9489-bb0144654131",
+            "colId": "7bdf6ba2-0e91-4aea-8b45-18eac85d6f0e",
+            "containerId": "a0b0ac31-e896-4186-9b6a-7ed137a5e9cf",
+            "name": "get seller orders",
+            "url": "http://localhost:8000/api/seller/orders/653438af9c975998e13fd0e8",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-10-21T21:38:44.008Z",
+            "modified": "2023-10-21T21:49:40.400Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM0MzhhZjljOTc1OTk4ZTEzZmQwZTgiLCJuYW1lIjoic2VsbGVyMiIsImVtYWlsIjoic2VsbGVyMkBnbWFpbC5jb20iLCJpYXQiOjE2OTc5MjQwMDR9.6UC04PV2iqLwpHVaM2or6YZ_fhINumqsx4bFrBQ4o4c"
+                },
+                {
+                    "name": "UserID",
+                    "value": "653438af9c975998e13fd0e8"
+                }
+            ],
+            "params": [
+                {
+                    "name": "UserID",
+                    "value": "6534384d9c975998e13fd0e4",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"products\":[\n    \"65343d98a3a07aed4bc83018\",\n  \n    \"65343e88b77e4d80c1c6598d\"\n    ],\n    \"sellerId\":\"653438af9c975998e13fd0e8\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "91ce3ed4-0140-49de-88b4-38a338ef3b23",
+            "colId": "7bdf6ba2-0e91-4aea-8b45-18eac85d6f0e",
+            "containerId": "8e122e9f-70a0-49d1-a0ca-ce15e05cea8f",
+            "name": "list of sellers",
+            "url": "http://localhost:8000/api/buyer/list-of-sellers",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-10-21T21:34:31.028Z",
+            "modified": "2023-10-21T21:36:03.502Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM0Mzg0ZDljOTc1OTk4ZTEzZmQwZTQiLCJuYW1lIjoidGVzdDEiLCJlbWFpbCI6InRlc3QxQGdtYWlsLmNvbSIsImlhdCI6MTY5NzkyMTU0OH0.yynveM07BIp5q5Sdgh44ZkaMejvGt5jFUtlU9RMVofM"
+                },
+                {
+                    "name": "UserID",
+                    "value": "6534384d9c975998e13fd0e4"
+                }
+            ],
+            "params": [
+                {
+                    "name": "UserID",
+                    "value": "6534384d9c975998e13fd0e4",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "447098b9-0b4e-473e-95ee-50325af6747c",
+            "colId": "7bdf6ba2-0e91-4aea-8b45-18eac85d6f0e",
+            "containerId": "8e122e9f-70a0-49d1-a0ca-ce15e05cea8f",
+            "name": "get catlog of seller id",
+            "url": "http://localhost:8000/api/buyer/seller-catalog/653438af9c975998e13fd0e8",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-10-21T21:36:50.948Z",
+            "modified": "2023-10-21T21:37:51.759Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM0Mzg0ZDljOTc1OTk4ZTEzZmQwZTQiLCJuYW1lIjoidGVzdDEiLCJlbWFpbCI6InRlc3QxQGdtYWlsLmNvbSIsImlhdCI6MTY5NzkyMTU0OH0.yynveM07BIp5q5Sdgh44ZkaMejvGt5jFUtlU9RMVofM"
+                },
+                {
+                    "name": "UserID",
+                    "value": "6534384d9c975998e13fd0e4"
+                }
+            ],
+            "params": [
+                {
+                    "name": "UserID",
+                    "value": "6534384d9c975998e13fd0e4",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "c3b02e4b-c6ad-4e41-9e78-7cf8142dc225",
+            "colId": "7bdf6ba2-0e91-4aea-8b45-18eac85d6f0e",
+            "containerId": "a0b0ac31-e896-4186-9b6a-7ed137a5e9cf",
+            "name": "create order",
+            "url": "http://localhost:8000/api/buyer/create-order/653438af9c975998e13fd0e8",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-10-21T21:38:44.010Z",
+            "modified": "2023-10-21T21:41:51.196Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM0Mzg0ZDljOTc1OTk4ZTEzZmQwZTQiLCJuYW1lIjoidGVzdDEiLCJlbWFpbCI6InRlc3QxQGdtYWlsLmNvbSIsImlhdCI6MTY5NzkyMTU0OH0.yynveM07BIp5q5Sdgh44ZkaMejvGt5jFUtlU9RMVofM"
+                },
+                {
+                    "name": "UserID",
+                    "value": "6534384d9c975998e13fd0e4"
+                }
+            ],
+            "params": [
+                {
+                    "name": "UserID",
+                    "value": "6534384d9c975998e13fd0e4",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"products\":[\n    \"65343d98a3a07aed4bc83018\",\n    \"65343e88b77e4d80c1c6598d\"\n    ]\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
