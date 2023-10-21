@@ -9,6 +9,8 @@ cd server
 download all dependencies
 npm i
 
+add env file in root folder
+and use mongo compass if needed for running the mongodb.
 
 create  a env file and save the file with data that i have provided with you in email
 
